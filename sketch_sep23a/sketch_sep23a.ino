@@ -16,10 +16,10 @@ void loop() {
   float voltage= sensorValue * (5.0 / 1023.0);
   
   if(voltage >= 4.8){
-    myservo.write(90);
+    myservo.write(0);
     Serial.println("on");
   }else{
-    myservo.write(0);
+    myservo.write(75);
     Serial.println("off");
   }
 }
