@@ -19,7 +19,7 @@ void loop() {
     myservo.write(0);
     Serial.println("on");
   }else{
-    myservo.write(75);
+    myservo.write(100);
     Serial.println("off");
   }
 }
